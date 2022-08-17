@@ -30,7 +30,9 @@ Users appreciate release notes as you update your extension.
 
 Initial release of JestFileRunner
 
+### 1.0.2
 
+Fix package json and activation event
 ---
 
 ## Following extension guidelines
@@ -43,4 +45,4 @@ Ensure that you've read through the extensions guidelines and follow the best pr
 ## Download Extension
 
 Currently not pushed to the marketplace, but you can download the latest package here:
-[jest-file-runner-0.0.1.vsix](./downloads/jest-file-runner-0.0.1.vsix)
+[jest-file-runner-1.0.2.vsix](./downloads/jest-file-runner-1.0.2.vsix)

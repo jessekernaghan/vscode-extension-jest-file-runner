@@ -1,12 +1,14 @@
 {
   "name": "jest-file-runner",
-  "displayName": "jest-file-runner",
+  "displayName": "Jest File Runner",
   "description": "Run individual test files or tests related to individual files. Intended primarily for nodejs/jest development.",
+	"publisher": "jessekernaghan",
+	"license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/jessekernaghan/vscode-extension-jest-file-runner.git"
   },
-  "version": "0.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.70.0"
   },
