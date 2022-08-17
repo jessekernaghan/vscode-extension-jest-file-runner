@@ -15,9 +15,9 @@
   ],
   "main": "./dist/extension.js",
   "activationEvents": [
+    "onStartupFinished",
     "workspaceContains:*.test.*",
-    "workspaceContains:*.spec.*",
-    "jestFileRunner.runTestFile"
+    "workspaceContains:*.spec.*"
   ],
   "contributes": {
     "commands": [
