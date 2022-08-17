@@ -1,35 +1,26 @@
-# jest-file-runner README
+# Jest File Runner - VSCode Extension
 
-This is the README for your extension "jest-file-runner". After writing up a brief description, we recommend including the following sections.
+This is a simple extension that automates the work of setting up and running jest cli commands against individual files. It targets specific files or related files using the `--runTestsByPath` and `--findRelatedTests` options.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- Explorer menu item for running only a specific test
+- Explorer menu item for running tests related to a specific file
+- Command palette `Run Test File` allows selecting a test file to be run
+- Command palette `Run Related Tests` allows selecting a file to run its related tests
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+This extension assumes you are a developer using jest, node, and npm by default. It can be configured for other use-cases but isn't focused on them.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
 
 This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+* `jestFileRunner.testCommand`: The test command to run for targeting a specific test, expect the filename and path as the last argument. Defaults to `npm test -- --runTestsByPath`
+* `jestFileRunner.relatedTestsCommand`: The test command to run for targeting a file's related tests, expect the filename and path as the last argument. Defaults to `npm test -- --findRelatedTests`
+* `jestFileRunner.quietMode`: Hides VSCode popups when JestFileRunner commands are run, defaults to true.
 
 ## Release Notes
 
@@ -37,15 +28,8 @@ Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
+Initial release of JestFileRunner
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
 
 ---
 
@@ -55,17 +39,3 @@ Ensure that you've read through the extensions guidelines and follow the best pr
 
 * [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
 
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
