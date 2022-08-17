@@ -39,3 +39,8 @@ Ensure that you've read through the extensions guidelines and follow the best pr
 
 * [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
 
+
+## Download Extension
+
+Currently not pushed to the marketplace, but you can download the latest package here:
+[jest-file-runner-0.0.1.vsix](./downloads/jest-file-runner-0.0.1.vsix)
